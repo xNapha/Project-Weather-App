@@ -1,0 +1,94 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: #262626;
+}
+#mainCon{
+    display: flex;
+    align-items: center;
+    height: 35rem;
+    width: 35rem;
+    flex-direction: column;
+    border: 1rem solid #ffffff;
+    border-radius: 3.5rem;
+    padding: 3.5rem;
+    box-shadow: 0rem 0rem 1rem #fff;
+}
+#searchCon{
+    position:relative;
+    top: -3.5rem;
+}
+#displayCon{
+    display: grid;
+    grid-template-areas: 
+    "pic pic pic pic"
+    "description description description description"
+    "current current max max"
+    "current current min min";
+    height: 41rem;
+    width: 41rem;
+    position:relative;
+    top: -2rem;
+}
+#condition{
+    display: grid;
+    grid-area: pic;
+    height: 18rem;
+    justify-self: center;
+}
+#description{
+    display: grid;
+    grid-area: description;
+    justify-self: center;
+    color: #ffffff;
+    height: 2rem;
+    position: relative;
+    top: 1rem;
+}
+#currentTemp{
+    display: grid;
+    grid-area: current;
+    font-size: 15rem;
+    justify-self: center;
+    color: #ffffff;
+}
+#maxTemp{
+    display: grid;
+    grid-area: max;
+    font-size: 4rem;
+    justify-self: left;
+    align-self: center;
+    color: #f0a3a3;
+}
+#minTemp{
+    display: grid;
+    grid-area: min;
+    font-size: 4rem;
+    justify-self: left;
+    align-self: center;
+    color: #a3dff0;
+}
